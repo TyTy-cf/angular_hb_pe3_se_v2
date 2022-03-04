@@ -1,0 +1,17 @@
+
+<div class="col-5 mx-auto" *ngIf="randomUser">
+  <div class="card-user">
+    <div class="container-image" (click)="smallDisplay = !smallDisplay">
+      <img [src]="randomUser.picture.large" [alt]="randomUser.name.first">
+      <div class="info-profil" [hidden]="smallDisplay">
+        <p>{{randomUser.name.first}}, {{randomUser.dob.age}}</p>
+        <fa-icon class="heart" [icon]="faHeart"></fa-icon>
+      </div>
+    </div>
+    <div class="container-info" [hidden]="!smallDisplay">
+      {{randomUser.name.first}}, {{randomUser.dob.age}}
+      <p>{{randomUser.location.city}}, {{randomUser.location.country}}</p>
+    </div>
+  </div>
+</div>
+
