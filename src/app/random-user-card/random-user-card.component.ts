@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
+import { faHeart, faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 import {ApiRandomUser} from "../../models/api-randomuser/api-random-user";
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-random-user-card',
@@ -9,10 +9,11 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 })
 export class RandomUserCardComponent {
 
-  faHeart = faHeart;
+  faCrosshairs = faCrosshairs;
+  iconFaHeart = faHeart;
 
   @Input()
-  randomUser: ApiRandomUser|undefined;
+  randomUserDaughter: ApiRandomUser|undefined;
   smallDisplay: boolean = false;
 
 }

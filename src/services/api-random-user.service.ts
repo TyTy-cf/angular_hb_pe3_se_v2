@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {ApiRandomUserResults} from "../models/api-randomuser/api-random-user-results";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiRandomUserService {
 

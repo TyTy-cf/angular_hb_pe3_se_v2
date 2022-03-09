@@ -4,7 +4,7 @@
   box-shadow: 5px 5px 16px 8px #270000;
 
   .container-image {
-    height: 600px;
+    height: 640px;
     position: relative;
 
     > img {
@@ -23,6 +23,7 @@
 
       .heart {
         color: red;
+        z-index: 10;
       }
     }
   }

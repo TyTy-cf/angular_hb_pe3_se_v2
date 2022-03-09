@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { RandomUserComponent } from './random-user/random-user.component';
 import { RandomUserCardComponent } from './random-user-card/random-user-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HousesComponent } from './harry-potter/houses/houses.component';
+import { WizardComponent } from './wizard/wizard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RandomUserComponent,
-    RandomUserCardComponent
+    RandomUserCardComponent,
+    NavbarComponent,
+    HousesComponent,
+    WizardComponent
   ],
   imports: [
     BrowserModule,
