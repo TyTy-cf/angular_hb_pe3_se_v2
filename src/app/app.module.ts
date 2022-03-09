@@ -9,7 +9,8 @@ import { RandomUserComponent } from './random-user/random-user.component';
 import { RandomUserCardComponent } from './random-user-card/random-user-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HousesComponent } from './harry-potter/houses/houses.component';
-import { WizardComponent } from './wizard/wizard.component';
+import { WizardComponent } from './harry-potter/wizard/wizard.component';
+import { WizardElixirsComponent } from './harry-potter/wizard-elixirs/wizard-elixirs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WizardComponent } from './wizard/wizard.component';
     RandomUserCardComponent,
     NavbarComponent,
     HousesComponent,
-    WizardComponent
+    WizardComponent,
+    WizardElixirsComponent
   ],
   imports: [
     BrowserModule,

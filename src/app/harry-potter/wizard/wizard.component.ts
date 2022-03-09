@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ApiHpService} from "../../services/api-hp.service";
-import {Wizard} from "../../models/harry-potter/wizard";
+import {ApiHpService} from "../../../services/api-hp.service";
+import {Wizard} from "../../../models/harry-potter/wizard";
 
 @Component({
   selector: 'app-wizard',
