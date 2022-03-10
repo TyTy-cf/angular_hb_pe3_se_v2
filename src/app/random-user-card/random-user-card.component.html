@@ -5,7 +5,11 @@
       <img [src]="randomUserDaughter.picture.large" [alt]="randomUserDaughter.name.first">
       <div class="info-profil" [hidden]="smallDisplay">
         <fa-icon class="heart" [icon]="iconFaHeart"></fa-icon>
-        <fa-icon class="heart" [icon]="faCrosshairs"></fa-icon>
+        <fa-icon class="heart" [icon]="faCrosshairs"
+                 (click)="notifyMotherComponent()"
+        >
+
+        </fa-icon>
         <p>{{randomUserDaughter.name.first}}, {{randomUserDaughter.dob.age}}</p>
       </div>
     </div>

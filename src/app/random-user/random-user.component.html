@@ -1,3 +1,14 @@
 
-<app-random-user-card [randomUserDaughter]="randomUser"></app-random-user-card>
-<!--<app-liked-users *ngIf="!isOnProfileView"></app-liked-users>-->
+<!--
+ (eventEmitterNewProfile) => indique que l'attribut eventEmitterNewProfile
+ est en @Output() dans la classe fille - représenté par les parenthèses
+ Ici, on va passer une fonction pour "traiter" la récupération de la donnée depuis la fille
+ On met toujours $event => il sera du même type que celui déclaré dans la classe fille
+ (dans l'EventEmitter)
+ -->
+<!-- [..] => indique un Input -->
+<!-- (..) => indique un Output -->
+<app-random-user-card
+  [randomUserDaughter]="randomUser"
+  (eventEmitterNewProfile)="newProfile($event)"
+></app-random-user-card>
